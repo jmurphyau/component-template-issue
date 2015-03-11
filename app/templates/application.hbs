@@ -1,6 +1,41 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    background-color: #fff;
+  }
+
+  body > div > div {
+    border: 1px solid;
+    width: 300px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  h3 {
+    margin:0px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .bad-fruits {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442
+  }
+  .good-fruits {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+
+</style>
+
 <div class='bad-fruits'>
+  <h3>Unexpected - Bad Fruit Components</h3>
   {{bad-fruit/apple}}
 
   {{bad-fruit/banana}}
@@ -8,6 +43,7 @@
 
 
 <div class='good-fruits'>
+  <h3>Expected - Good Fruit Components</h3>
   {{good-fruit.apple}}
 
   {{good-fruit.banana}}
